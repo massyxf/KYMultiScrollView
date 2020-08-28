@@ -7,14 +7,14 @@
 
 #import <KYMultiScrollView/KYMultiViewController.h>
 
-@protocol KYScrollVcProtocol;
 @class KYMultiHeadView;
+@protocol KYHeaderRefreshVcProtocol;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KYHeaderRefreshMultiViewController : KYMultiViewController
 
--(instancetype)initWithSubVcs:(NSArray<UIViewController<KYScrollVcProtocol> *> *)subVcs
+-(instancetype)initWithSubVcs:(NSArray<UIViewController<KYHeaderRefreshVcProtocol> *> *)subVcs
                      headView:(KYMultiHeadView *)headView
                  defaultIndex:(NSInteger)index;
 

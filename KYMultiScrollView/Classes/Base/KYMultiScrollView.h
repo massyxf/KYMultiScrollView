@@ -10,7 +10,7 @@
 
 #import "KYHeaderRefreshMultiViewController.h"
 #import "KYTopRefreshMultiViewController.h"
-#import "KYScrollVcProtocol.h"
+#import "KYHeaderRefreshVcProtocol.h"
 #import "KYMultiHeadView.h"
 
 

@@ -10,12 +10,12 @@
 #endif
 #endif
 
-#import "KYHeaderRefreshMultiViewController.h"
 #import "KYMultiHeader.h"
 #import "KYMultiHeadView.h"
 #import "KYMultiScrollView.h"
 #import "KYMultiViewController.h"
-#import "KYScrollVcProtocol.h"
+#import "KYHeaderRefreshMultiViewController.h"
+#import "KYHeaderRefreshVcProtocol.h"
 #import "KYTopRefreshMultiViewController.h"
 
 FOUNDATION_EXPORT double KYMultiScrollViewVersionNumber;

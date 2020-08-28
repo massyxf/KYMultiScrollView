@@ -6,14 +6,14 @@
 //  Copyright © 2020 massyxf. All rights reserved.
 //
 
-#import <KYMultiScrollView/KYScrollVcProtocol.h>
+#import <KYMultiScrollView/KYHeaderRefreshVcProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYDemoSubViewController : UIViewController<KYScrollVcProtocol>
+@interface KYDemoSubViewController : UIViewController<KYHeaderRefreshVcProtocol>
 @property (nonatomic,assign)CGFloat top;
 
-@property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYScrollVcProtocol>vc);
+@property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYHeaderRefreshVcProtocol>vc);
 
 @property (nonatomic,assign)NSInteger rowCount;
 

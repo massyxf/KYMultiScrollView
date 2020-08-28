@@ -6,7 +6,7 @@
 //
 
 #import "KYHeaderRefreshMultiViewController.h"
-#import "KYScrollVcProtocol.h"
+#import "KYHeaderRefreshVcProtocol.h"
 #import "KYMultiHeadView.h"
 
 @interface KYHeaderRefreshMultiViewController ()
@@ -17,13 +17,11 @@
 
 @implementation KYHeaderRefreshMultiViewController
 
--(instancetype)initWithSubVcs:(NSArray<UIViewController<KYScrollVcProtocol> *> *)subVcs
+-(instancetype)initWithSubVcs:(NSArray<UIViewController<KYHeaderRefreshVcProtocol> *> *)subVcs
                      headView:(KYMultiHeadView *)headView
                  defaultIndex:(NSInteger)index{
     if (self = [super initWithSubVcs:subVcs defaultIndex:index]) {
         _headView = headView;
-        
-        [self configSubVcs];
     }
     return self;
 }
@@ -31,7 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self configSubVcs];
+    
     if (_headView) {
+        _headView.frame = _headView.bounds;
         [self.view addSubview:_headView];
     }
 }
@@ -39,13 +40,13 @@
 -(void)configSubVcs{
     KYWeakSelf
     CGFloat head_height = _headView.maxShowHeight;
-    [self.subVcs enumerateObjectsUsingBlock:^(UIViewController<KYScrollVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.subVcs enumerateObjectsUsingBlock:^(UIViewController<KYHeaderRefreshVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.top = head_height;
-        obj.offsetYChanged = ^(CGFloat offsetY,id<KYScrollVcProtocol> subVc) {
+        obj.offsetYChanged = ^(CGFloat offsetY,id<KYHeaderRefreshVcProtocol> subVc) {
             //一般的多tableview嵌套
             if (!weakSelf.headView) { return; }
             
-            UIViewController<KYScrollVcProtocol> *currentVc = (UIViewController<KYScrollVcProtocol> *)weakSelf.subVcs[weakSelf.currentIndex];
+            UIViewController<KYHeaderRefreshVcProtocol> *currentVc = (UIViewController<KYHeaderRefreshVcProtocol> *)weakSelf.subVcs[weakSelf.currentIndex];
             if (subVc != currentVc) { return; }
             
             //head
@@ -67,7 +68,7 @@
     for (int i=0; i<self.subVcs.count; i++) {
         if (i == self.currentIndex) { continue; }
         
-        UIViewController<KYScrollVcProtocol> *vc = (UIViewController<KYScrollVcProtocol> *)self.subVcs[i];
+        UIViewController<KYHeaderRefreshVcProtocol> *vc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[i];
         if (!vc.isViewLoaded) { continue; }
         
         //根据当前offset算出此时head的高度
@@ -81,7 +82,7 @@
     }
 }
 
--(CGFloat)headHeightWithVc:(id<KYScrollVcProtocol>)vc offset:(CGFloat)offsetY{
+-(CGFloat)headHeightWithVc:(id<KYHeaderRefreshVcProtocol>)vc offset:(CGFloat)offsetY{
     CGFloat head_height = _headView.maxShowHeight;
     CGFloat head_minHeight = _headView.minShowHeight;
     CGFloat headShowHeight = head_height - (offsetY + vc.scrollView.contentInset.top);
@@ -97,7 +98,7 @@
     NSInteger lastIndex = self.currentIndex;
     if (![super selectVcAtIndex:index]) { return NO; }
     
-    UIViewController<KYScrollVcProtocol> *viewcontroller = (UIViewController<KYScrollVcProtocol> *)self.subVcs[index];
+    UIViewController<KYHeaderRefreshVcProtocol> *viewcontroller = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[self.currentIndex];
     BOOL isviewLoad = viewcontroller.isViewLoaded;
     
     CGFloat needOffset = 0;
@@ -105,7 +106,7 @@
     //初次加载 isviewLoad
     if (!isviewLoad && _headView) {
         CGFloat head_height = _headView.maxShowHeight;
-        id<KYScrollVcProtocol> currentVc = (UIViewController<KYScrollVcProtocol> *)self.subVcs[lastIndex];
+        id<KYHeaderRefreshVcProtocol> currentVc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[lastIndex];
         CGFloat offsetY = currentVc.scrollView.contentOffset.y;
         CGFloat headShowHeight = [self headHeightWithVc:currentVc offset:offsetY];
         if (headShowHeight != head_height) {

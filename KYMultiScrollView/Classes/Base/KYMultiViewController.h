@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy,readonly)NSArray<UIViewController *> *subVcs;
 @property (nonatomic,assign,readonly)NSInteger currentIndex;
+@property (nonatomic,weak,readonly)UIViewController *currentVc;
+@property (nonatomic,weak,readonly)UIScrollView *bgScrollview;
 
 @property (nonatomic,weak)id<KYMultiViewControllerDelegate> delegate;
 
