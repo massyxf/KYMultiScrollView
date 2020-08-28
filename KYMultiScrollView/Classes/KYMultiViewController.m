@@ -13,7 +13,7 @@
 
 @interface KYMultiViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic,copy)NSArray<id<KYScrollVcProtocol>> *subVcs;
+@property (nonatomic,copy)NSArray<UIViewController<KYScrollVcProtocol> *> *subVcs;
 @property (nonatomic,assign)NSInteger currentIndex;
 
 @property (nonatomic,weak)UIScrollView *bgScrollview;
@@ -24,10 +24,15 @@
 
 @implementation KYMultiViewController
 
--(instancetype)initWithSubVcs:(NSArray<id<KYScrollVcProtocol>> *)subVcs headView:(KYMultiHeadView *)headView defaultIndex:(NSInteger)index{
+-(instancetype)initWithSubVcs:(NSArray<UIViewController<KYScrollVcProtocol> *> *)subVcs
+                     headView:(KYMultiHeadView *)headView
+                 defaultIndex:(NSInteger)index{
     if (self = [self init]) {
         _subVcs = [subVcs copy];
         _headView = headView;
+        if (index < 0 && _subVcs.count <= index) {
+            index = 0;
+        }
         _currentIndex = index;
     }
     return self;
@@ -55,19 +60,24 @@
     
     [self configSubVcs];
     
-    [self selectIndex:_currentIndex];
+    if (_subVcs.count > 0) {
+        bgScrollView.contentOffset = CGPointMake(width * _currentIndex, 0);
+        [self selectIndex:_currentIndex];
+    }
 }
 
 -(void)configSubVcs{
     KYWeakSelf
     CGFloat head_height = _headView.maxShowHeight;
-    [_subVcs enumerateObjectsUsingBlock:^(id<KYScrollVcProtocol>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_subVcs enumerateObjectsUsingBlock:^(UIViewController<KYScrollVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.top = head_height;
         obj.offsetYChanged = ^(CGFloat offsetY,id<KYScrollVcProtocol> subVc) {
-            id<KYScrollVcProtocol> currentVc = weakSelf.subVcs[weakSelf.currentIndex];
-            if (subVc != currentVc) {
-                return;
-            }
+            //一般的多tableview嵌套
+            if (!weakSelf.headView) { return; }
+            
+            UIViewController<KYScrollVcProtocol> * currentVc = weakSelf.subVcs[weakSelf.currentIndex];
+            if (subVc != currentVc) { return; }
+            
             //head
             //NSLog(@"%f --- %f",offsetY,subVc.scrollView.contentInset.top);
             CGFloat headShowHeight = [self headHeightWithVc:subVc offset:offsetY];
@@ -78,8 +88,9 @@
             //vc
             [weakSelf alterOtherVcOffsetWithHeaderShowHeight:headShowHeight];
         };
-        [self addChildViewController:(UIViewController *)obj];
-    }];}
+        [self addChildViewController:obj];
+    }];
+}
 
 -(void)alterOtherVcOffsetWithHeaderShowHeight:(CGFloat)height{
     CGFloat head_height = _headView.maxShowHeight;
@@ -104,8 +115,8 @@
 
 #pragma mark - custom func
 -(void)selectIndex:(NSInteger)index{
-    id<KYScrollVcProtocol> vc = _subVcs[index];
-    UIViewController *viewcontroller = (UIViewController *)vc;
+    NSLog(@"%s",__func__);
+    UIViewController<KYScrollVcProtocol> *viewcontroller = _subVcs[index];
     BOOL isviewLoad = viewcontroller.isViewLoaded;
     
     if (index == _currentIndex && isviewLoad) {
@@ -113,7 +124,9 @@
     }
     
     CGFloat needOffset = 0;
-    if (!isviewLoad) {
+    //一般的多tableview嵌套 _headView
+    //初次加载 isviewLoad
+    if (!isviewLoad && _headView) {
         CGFloat head_height = _headView.maxShowHeight;
         id<KYScrollVcProtocol> currentVc = _subVcs[_currentIndex];
         CGFloat offsetY = currentVc.scrollView.contentOffset.y;
@@ -131,11 +144,16 @@
     CGFloat height = CGRectGetHeight(self.view.bounds);
     viewcontroller.view.frame = CGRectMake(index * width, 0, width, height);
     
-    _headView.responseView = vc.scrollView;
+    _headView.responseView = viewcontroller.scrollView;
     _currentIndex = index;
     
-    if (!isviewLoad) {
-        vc.scrollView.contentOffset = CGPointMake(0, needOffset);
+    //一般的多tableview嵌套
+    if (!isviewLoad && _headView) {
+        viewcontroller.scrollView.contentOffset = CGPointMake(0, needOffset);
+    }
+    
+    if ([_delegate respondsToSelector:@selector(multiViewController:currentVcChanged:index:)]) {
+        [_delegate multiViewController:self currentVcChanged:viewcontroller index:index];
     }
 }
 

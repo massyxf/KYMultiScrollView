@@ -32,7 +32,7 @@
     
     KYMultiViewController *multiVc = [[KYMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
                                                                           headView:headView
-                                                                      defaultIndex:0];
+                                                                      defaultIndex:2];
     [self addChildViewController:multiVc];
     [self.view addSubview:multiVc.view];
 }
