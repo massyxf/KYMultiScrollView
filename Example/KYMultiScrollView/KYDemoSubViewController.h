@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYScrollVcProtocol>vc);
 
+@property (nonatomic,assign)NSInteger rowCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

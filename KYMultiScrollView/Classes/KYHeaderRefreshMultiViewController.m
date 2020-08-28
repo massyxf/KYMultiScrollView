@@ -5,17 +5,17 @@
 //  Created by yxf on 2020/8/28.
 //
 
-#import "KYMultiHeaderRefreshViewController.h"
+#import "KYHeaderRefreshMultiViewController.h"
 #import "KYScrollVcProtocol.h"
 #import "KYMultiHeadView.h"
 
-@interface KYMultiHeaderRefreshViewController ()
+@interface KYHeaderRefreshMultiViewController ()
 
 @property (nonatomic,strong)KYMultiHeadView *headView;
 
 @end
 
-@implementation KYMultiHeaderRefreshViewController
+@implementation KYHeaderRefreshMultiViewController
 
 -(instancetype)initWithSubVcs:(NSArray<UIViewController<KYScrollVcProtocol> *> *)subVcs
                      headView:(KYMultiHeadView *)headView

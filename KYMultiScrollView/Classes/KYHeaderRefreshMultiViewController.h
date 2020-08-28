@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYMultiHeaderRefreshViewController : KYMultiViewController
+@interface KYHeaderRefreshMultiViewController : KYMultiViewController
 
 -(instancetype)initWithSubVcs:(NSArray<UIViewController<KYScrollVcProtocol> *> *)subVcs
                      headView:(KYMultiHeadView *)headView

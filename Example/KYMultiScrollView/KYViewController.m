@@ -7,7 +7,7 @@
 //
 
 #import "KYViewController.h"
-#import <KYMultiScrollView/KYMultiHeaderRefreshViewController.h>
+#import <KYMultiScrollView/KYHeaderRefreshMultiViewController.h>
 #import "KYDemoHeadView.h"
 #import "KYDemoSubViewController.h"
 
@@ -27,10 +27,13 @@
     headView.minShowHeight = 50;
     
     KYDemoSubViewController *subVc1 = [[KYDemoSubViewController alloc] init];
+    subVc1.rowCount = 3;
     KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
+    subVc2.rowCount = 0;
     KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
+    subVc3.rowCount = 20;
     
-    KYMultiHeaderRefreshViewController *multiVc = [[KYMultiHeaderRefreshViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
+    KYHeaderRefreshMultiViewController *multiVc = [[KYHeaderRefreshMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
                                                                           headView:headView
                                                                       defaultIndex:2];
     [self addChildViewController:multiVc];
