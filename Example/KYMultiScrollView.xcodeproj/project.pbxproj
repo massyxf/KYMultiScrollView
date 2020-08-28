@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C3879924F7698E00E5C621 /* KYDemoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C3879824F7698E00E5C621 /* KYDemoHeadView.m */; };
+		42C3879C24F769A400E5C621 /* KYDemoSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C3879B24F769A400E5C621 /* KYDemoSubViewController.m */; };
+		42C387A324F76A2C00E5C621 /* NDBackFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C3879D24F76A2B00E5C621 /* NDBackFooterRefresh.m */; };
+		42C387A424F76A2C00E5C621 /* NDHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C3879F24F76A2C00E5C621 /* NDHeaderRefresh.m */; };
+		42C387A524F76A2C00E5C621 /* NDFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C387A124F76A2C00E5C621 /* NDFooterRefresh.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,8 +43,18 @@
 
 /* Begin PBXFileReference section */
 		24FC493C7DBCF932FDEEE644 /* Pods_KYMultiScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMultiScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C6F14A050D765F8B806D08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		36C6F14A050D765F8B806D08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3A4FA5C3A486DDE453036101 /* Pods_KYMultiScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMultiScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C3879724F7698E00E5C621 /* KYDemoHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYDemoHeadView.h; sourceTree = "<group>"; };
+		42C3879824F7698E00E5C621 /* KYDemoHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYDemoHeadView.m; sourceTree = "<group>"; };
+		42C3879A24F769A400E5C621 /* KYDemoSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYDemoSubViewController.h; sourceTree = "<group>"; };
+		42C3879B24F769A400E5C621 /* KYDemoSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYDemoSubViewController.m; sourceTree = "<group>"; };
+		42C3879D24F76A2B00E5C621 /* NDBackFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDBackFooterRefresh.m; sourceTree = "<group>"; };
+		42C3879E24F76A2B00E5C621 /* NDBackFooterRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDBackFooterRefresh.h; sourceTree = "<group>"; };
+		42C3879F24F76A2C00E5C621 /* NDHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDHeaderRefresh.m; sourceTree = "<group>"; };
+		42C387A024F76A2C00E5C621 /* NDFooterRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDFooterRefresh.h; sourceTree = "<group>"; };
+		42C387A124F76A2C00E5C621 /* NDFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDFooterRefresh.m; sourceTree = "<group>"; };
+		42C387A224F76A2C00E5C621 /* NDHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHeaderRefresh.h; sourceTree = "<group>"; };
 		4E1759F78C4A2BDFEEDC091A /* Pods-KYMultiScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMultiScrollView_Example.release.xcconfig"; path = "Target Support Files/Pods-KYMultiScrollView_Example/Pods-KYMultiScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KYMultiScrollView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYMultiScrollView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,11 +76,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77047A688C159A524EF40207 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		77047A688C159A524EF40207 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A8E2478AC695902EE8B8288 /* Pods-KYMultiScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMultiScrollView_Tests.release.xcconfig"; path = "Target Support Files/Pods-KYMultiScrollView_Tests/Pods-KYMultiScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C5F6CD0917F5AE08BCF55961 /* Pods-KYMultiScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMultiScrollView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KYMultiScrollView_Tests/Pods-KYMultiScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD2C5DABEE7A469B8BFEA8AD /* KYMultiScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KYMultiScrollView.podspec; path = ../KYMultiScrollView.podspec; sourceTree = "<group>"; };
+		CD2C5DABEE7A469B8BFEA8AD /* KYMultiScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KYMultiScrollView.podspec; path = ../KYMultiScrollView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D1728DEF871C4DB1C0F8A41D /* Pods-KYMultiScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYMultiScrollView_Example.debug.xcconfig"; path = "Target Support Files/Pods-KYMultiScrollView_Example/Pods-KYMultiScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +118,6 @@
 				C5F6CD0917F5AE08BCF55961 /* Pods-KYMultiScrollView_Tests.debug.xcconfig */,
 				8A8E2478AC695902EE8B8288 /* Pods-KYMultiScrollView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,8 +161,18 @@
 				6003F59C195388D20070C39A /* KYAppDelegate.h */,
 				6003F59D195388D20070C39A /* KYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				42C3879E24F76A2B00E5C621 /* NDBackFooterRefresh.h */,
+				42C3879D24F76A2B00E5C621 /* NDBackFooterRefresh.m */,
+				42C387A024F76A2C00E5C621 /* NDFooterRefresh.h */,
+				42C387A124F76A2C00E5C621 /* NDFooterRefresh.m */,
+				42C387A224F76A2C00E5C621 /* NDHeaderRefresh.h */,
+				42C3879F24F76A2C00E5C621 /* NDHeaderRefresh.m */,
 				6003F5A5195388D20070C39A /* KYViewController.h */,
 				6003F5A6195388D20070C39A /* KYViewController.m */,
+				42C3879724F7698E00E5C621 /* KYDemoHeadView.h */,
+				42C3879824F7698E00E5C621 /* KYDemoHeadView.m */,
+				42C3879A24F769A400E5C621 /* KYDemoSubViewController.h */,
+				42C3879B24F769A400E5C621 /* KYDemoSubViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -248,6 +272,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = massyxf;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = FLV4GVU8JK;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +331,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KYMultiScrollView_Example/Pods-KYMultiScrollView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KYMultiScrollView/KYMultiScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYMultiScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,8 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C3879C24F769A400E5C621 /* KYDemoSubViewController.m in Sources */,
 				6003F59E195388D20070C39A /* KYAppDelegate.m in Sources */,
+				42C3879924F7698E00E5C621 /* KYDemoHeadView.m in Sources */,
+				42C387A324F76A2C00E5C621 /* NDBackFooterRefresh.m in Sources */,
+				42C387A524F76A2C00E5C621 /* NDFooterRefresh.m in Sources */,
 				6003F5A7195388D20070C39A /* KYViewController.m in Sources */,
+				42C387A424F76A2C00E5C621 /* NDHeaderRefresh.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +529,12 @@
 			baseConfigurationReference = D1728DEF871C4DB1C0F8A41D /* Pods-KYMultiScrollView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FLV4GVU8JK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KYMultiScrollView/KYMultiScrollView-Prefix.pch";
 				INFOPLIST_FILE = "KYMultiScrollView/KYMultiScrollView-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxf.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -510,11 +546,12 @@
 			baseConfigurationReference = 4E1759F78C4A2BDFEEDC091A /* Pods-KYMultiScrollView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FLV4GVU8JK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KYMultiScrollView/KYMultiScrollView-Prefix.pch";
 				INFOPLIST_FILE = "KYMultiScrollView/KYMultiScrollView-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yxf.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

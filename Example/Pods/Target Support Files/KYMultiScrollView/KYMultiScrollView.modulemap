@@ -1,0 +1,6 @@
+framework module KYMultiScrollView {
+  umbrella header "KYMultiScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

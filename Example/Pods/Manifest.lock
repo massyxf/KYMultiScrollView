@@ -1,0 +1,23 @@
+PODS:
+  - KYMultiScrollView (0.1.0)
+  - MJRefresh (3.2.3)
+
+DEPENDENCIES:
+  - KYMultiScrollView (from `../`)
+  - MJRefresh (~> 3.2.2)
+
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  KYMultiScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KYMultiScrollView: cfb0f63cefe1a71625988bc448e4d26707dd81bd
+  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
+
+PODFILE CHECKSUM: 61b52833dca14e6ed152abe953fd64426a4b7ff2
+
+COCOAPODS: 1.9.1

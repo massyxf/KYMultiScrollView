@@ -7,6 +7,9 @@
 //
 
 #import "KYViewController.h"
+#import <KYMultiScrollView/KYMultiViewController.h>
+#import "KYDemoHeadView.h"
+#import "KYDemoSubViewController.h"
 
 @interface KYViewController ()
 
@@ -17,7 +20,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    KYDemoHeadView *headView = [[KYDemoHeadView alloc] initWithFrame:CGRectMake(0, 0, width, 200)];
+    headView.backgroundColor = [UIColor redColor];
+    headView.maxShowHeight = 200;
+    headView.minShowHeight = 50;
+    
+    KYDemoSubViewController *subVc1 = [[KYDemoSubViewController alloc] init];
+    KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
+    KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
+    
+    KYMultiViewController *multiVc = [[KYMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
+                                                                          headView:headView
+                                                                      defaultIndex:0];
+    [self addChildViewController:multiVc];
+    [self.view addSubview:multiVc.view];
 }
 
 - (void)didReceiveMemoryWarning
