@@ -7,7 +7,7 @@
 //
 
 #import "KYViewController.h"
-#import <KYMultiScrollView/KYMultiViewController.h>
+#import <KYMultiScrollView/KYMultiHeaderRefreshViewController.h>
 #import "KYDemoHeadView.h"
 #import "KYDemoSubViewController.h"
 
@@ -30,7 +30,7 @@
     KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
     KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
     
-    KYMultiViewController *multiVc = [[KYMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
+    KYMultiHeaderRefreshViewController *multiVc = [[KYMultiHeaderRefreshViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
                                                                           headView:headView
                                                                       defaultIndex:2];
     [self addChildViewController:multiVc];

@@ -11,6 +11,7 @@
 #endif
 
 #import "KYMultiHeader.h"
+#import "KYMultiHeaderRefreshViewController.h"
 #import "KYMultiHeadView.h"
 #import "KYMultiViewController.h"
 #import "KYScrollVcProtocol.h"
