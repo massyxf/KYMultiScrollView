@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KYTopRefreshMultiViewController : KYMultiViewController
 
+@property (nonatomic,strong,readonly)UIScrollView *verticalScrollView;
+
 -(instancetype)initWithSubVcs:(NSArray<UIViewController<KYTopRefreshVcProtocol> *> *)subVcs
                  defaultIndex:(NSInteger)index
                      headView:(KYMultiHeadView *)headView;

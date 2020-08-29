@@ -10,6 +10,11 @@
 #import <KYMultiScrollView/KYHeaderRefreshMultiViewController.h>
 #import "KYDemoHeadView.h"
 #import "KYDemoSubViewController.h"
+#import <KYMultiScrollView/KYTopRefreshMultiViewController.h>
+
+#import "NDHeaderRefresh.h"
+#import "NDFooterRefresh.h"
+#import "NDBackFooterRefresh.h"
 
 @interface KYViewController ()
 
@@ -21,7 +26,9 @@
 {
     [super viewDidLoad];
     
-    [self headerRefreshDemo];
+//    [self headerRefreshDemo];
+    
+    [self topRefreshDemo];
 }
 
 -(void)headerRefreshDemo{
@@ -43,10 +50,33 @@
     [self.view addSubview:multiVc.view];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)topRefreshDemo{
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    KYDemoHeadView *headView = [[KYDemoHeadView alloc] initWithFrame:CGRectMake(0, 0, width, 200)];
+    headView.backgroundColor = [UIColor redColor];
+    headView.maxShowHeight = 200;
+    headView.minShowHeight = 50;
+    
+    KYDemoSubViewController *subVc1 = [[KYDemoSubViewController alloc] init];
+    subVc1.isTopRefreshDemo = YES;
+    KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
+    subVc2.isTopRefreshDemo = YES;
+    KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
+    subVc3.isTopRefreshDemo = YES;
+    
+    KYTopRefreshMultiViewController *multiVc = [[KYTopRefreshMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3] defaultIndex:0 headView:headView];
+    
+    __weak typeof(multiVc) weakVc = multiVc;
+    multiVc.verticalScrollView.mj_header = [NDHeaderRefresh headerWithRefreshingBlock:^{
+        [(KYDemoSubViewController *)weakVc.currentVc loadData:NO];
+        [weakVc.verticalScrollView.mj_header endRefreshing];
+    }];
+    multiVc.verticalScrollView.mj_footer = [NDBackFooterRefresh footerWithRefreshingBlock:^{
+        [(KYDemoSubViewController *)weakVc.currentVc loadData:YES];
+        [weakVc.verticalScrollView.mj_footer endRefreshing];
+    }];
+    [self addChildViewController:multiVc];
+    [self.view addSubview:multiVc.view];
 }
 
 @end

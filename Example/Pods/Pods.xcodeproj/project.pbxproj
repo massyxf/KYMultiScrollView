@@ -292,9 +292,9 @@
 		7DDEEA5E9A329997D1DED47D249DB8F9 /* HeaderRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				5E367241C7A95BD7F47AAF5BF404A14E /* KYHeaderRefreshVcProtocol.h */,
 				787D4992281F65E356435D2553B9982B /* KYHeaderRefreshMultiViewController.h */,
 				0FD1C82C3030E96EAD54509FAECB0BAC /* KYHeaderRefreshMultiViewController.m */,
-				5E367241C7A95BD7F47AAF5BF404A14E /* KYHeaderRefreshVcProtocol.h */,
 			);
 			name = HeaderRefresh;
 			path = KYMultiScrollView/Classes/HeaderRefresh;
@@ -303,8 +303,8 @@
 		89AB189B16850B7B3B52C1565E867452 /* TopRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				2226A3C3A287F8851897AEEC30E2BD08 /* KYTopRefreshMultiViewController.h */,
 				9C9F6D3F6B2072A94B4EF9D8664BA9BB /* KYTopRefreshVcProtocol.h */,
+				2226A3C3A287F8851897AEEC30E2BD08 /* KYTopRefreshMultiViewController.h */,
 				B1E502EFAEDDB63E673412B97D88442F /* KYTopRefreshMultiViewController.m */,
 			);
 			name = TopRefresh;

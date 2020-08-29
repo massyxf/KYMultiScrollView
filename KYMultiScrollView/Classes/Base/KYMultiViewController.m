@@ -8,7 +8,7 @@
 #import "KYMultiViewController.h"
 
 
-@interface KYMultiViewController ()<UIScrollViewDelegate>
+@interface KYMultiViewController ()
 
 @property (nonatomic,copy)NSArray<UIViewController *> *subVcs;
 @property (nonatomic,assign)NSInteger currentIndex;

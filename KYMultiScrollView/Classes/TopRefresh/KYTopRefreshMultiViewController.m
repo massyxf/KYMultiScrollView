@@ -13,6 +13,9 @@
 
 @property (nonatomic,strong)KYMultiHeadView *headView;
 
+@property (nonatomic,strong)UIScrollView *verticalScrollView;
+
+
 @end
 
 @implementation KYTopRefreshMultiViewController
@@ -29,6 +32,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIView *bgScrollView = self.bgScrollview;
+    [self.verticalScrollView addSubview:bgScrollView];
+    [self.view insertSubview:self.verticalScrollView atIndex:0];
+    _verticalScrollView.frame = self.view.bounds;
+    _verticalScrollView.contentSize = CGSizeMake(0, KYMultiScreenHeight);
+    _verticalScrollView.delegate = self;
+    
+    if (@available(iOS 11,*)) {
+        _verticalScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else{
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
+        
     [self configSubVc];
     
     if (!_headView) { return;}
@@ -39,6 +56,13 @@
     
     CGFloat height = CGRectGetHeight(_headView.bounds);
     self.bgScrollview.scrollIndicatorInsets = UIEdgeInsetsMake(height, 0, 0, 0);
+}
+
+-(UIScrollView *)verticalScrollView{
+    if (!_verticalScrollView) {
+        _verticalScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+    }
+    return _verticalScrollView;
 }
 
 -(BOOL)selectVcAtIndex:(NSInteger)index{
@@ -70,12 +94,37 @@
 }
 
 -(void)resetContentSizeWithVc:(UIViewController<KYTopRefreshVcProtocol> *)vc{
-    CGSize size = self.bgScrollview.contentSize;
-    size.height = vc.scrollView.contentSize.height;
-    self.bgScrollview.contentSize = size;
+    CGSize size = self.verticalScrollView.contentSize;
+    size.height = vc.scrollView.contentSize.height + _headView.maxShowHeight;
+    if (size.height < KYMultiScreenHeight) {
+        size.height = KYMultiScreenHeight;
+    }
+    CGRect bgFrame = self.bgScrollview.frame;
+    bgFrame.size.height = size.height;
+    self.bgScrollview.frame = bgFrame;
+    
+    CGRect vcFrame = vc.view.frame;
+    vcFrame.size.height = size.height;
+    vc.view.frame = vcFrame;
+    vc.scrollView.frame = vc.view.bounds;
+    self.verticalScrollView.contentSize = size;
 }
 
-
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView == _verticalScrollView && _headView) {
+        CGFloat offsetY = scrollView.contentOffset.y;
+        if (offsetY > _headView.maxShowHeight - _headView.minShowHeight) {
+            offsetY = _headView.maxShowHeight - _headView.minShowHeight;
+        }
+        CGRect frame = _headView.frame;
+        frame.origin.y = -offsetY;
+        _headView.frame = frame;
+        return;
+    }
+    if ([KYMultiViewController instancesRespondToSelector:@selector(scrollViewDidScroll:)]) {
+        [super scrollViewDidScroll:scrollView];
+    }
+}
 
 
 @end

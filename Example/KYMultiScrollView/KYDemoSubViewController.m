@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _rowCount = 10;
+    _rowCount = 0;
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -38,13 +38,20 @@
     }else{
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-        
-    tableView.mj_header = [NDHeaderRefresh headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];
-    tableView.mj_footer = [NDBackFooterRefresh footerWithRefreshingTarget:self refreshingAction:@selector(footerRefresh)];
     _tableview = tableView;
     
     [self.view addSubview:tableView];
     
+    if (_isTopRefreshDemo) {
+        [tableView addObserver:self
+                    forKeyPath:@"contentSize"
+                       options:NSKeyValueObservingOptionNew
+                       context:nil];
+        return;
+    }
+    
+    tableView.mj_header = [NDHeaderRefresh headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];
+    tableView.mj_footer = [NDBackFooterRefresh footerWithRefreshingTarget:self refreshingAction:@selector(footerRefresh)];
     [tableView.mj_header beginRefreshing];
 }
 
@@ -62,14 +69,14 @@
 -(void)headerRefresh{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableview.mj_header endRefreshing];
-//        [self loadData:NO];
+        [self loadData:NO];
     });
 }
 
 -(void)footerRefresh{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableview.mj_footer endRefreshing];
-//        [self loadData:YES];
+        [self loadData:YES];
     });
 }
 
@@ -81,6 +88,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSLog(@"count:%ld %p",_rowCount,self);
     return _rowCount;
 }
 
@@ -92,6 +100,13 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
     !_offsetYChanged ? : _offsetYChanged(y,self);
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"contentSize"]) {
+        CGSize size = [change[NSKeyValueChangeNewKey] CGSizeValue];
+        !_contentSizeChanged ? : _contentSizeChanged(size,self);
+    }
 }
 
 

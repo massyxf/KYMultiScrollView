@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYHeaderRefreshVcProtocol>vc);
 @property (nonatomic,copy)void (^contentSizeChanged)(CGSize size,UIViewController<KYTopRefreshVcProtocol> *vc);
 
+@property (nonatomic,assign)BOOL isTopRefreshDemo;
+
 -(void)loadData:(BOOL)isMore;
 
 @end

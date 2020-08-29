@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface KYMultiViewController : UIViewController
+@interface KYMultiViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic,strong)UIColor *bgColor;
 
