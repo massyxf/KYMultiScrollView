@@ -56,14 +56,16 @@
     if (_subVcs.count > 0) {
         bgScrollView.contentOffset = CGPointMake(width * _currentIndex, 0);
         [self selectVcAtIndex:_currentIndex];
-        self.currentVc = _subVcs[_currentIndex];
     }
 }
 
 #pragma mark - setter
--(void)setCurrentVc:(UIViewController *)currentVc{
-    if (_currentVc == currentVc) { return; }
-    _currentVc = currentVc;
+-(void)setCurrentIndex:(NSInteger)currentIndex{
+    if (_currentIndex == currentIndex && _currentVc == _subVcs[currentIndex]) {
+        return;
+    }
+    _currentIndex = currentIndex;
+    _currentVc = _subVcs[currentIndex];
     if ([_delegate respondsToSelector:@selector(multiViewController:currentVcChanged:index:)]) {
         [_delegate multiViewController:self currentVcChanged:_currentVc index:_currentIndex];
     }
@@ -77,7 +79,7 @@
     if (index == _currentIndex && isviewLoad) {
         return NO;
     }
-    _currentIndex = index;
+    self.currentIndex = index;
     [_bgScrollview addSubview:viewcontroller.view];
     CGFloat width = CGRectGetWidth(self.view.bounds);
     CGFloat height = CGRectGetHeight(self.view.bounds);
@@ -88,10 +90,12 @@
 
 #pragma mark - UIScrollViewDelegate
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    CGFloat width = CGRectGetWidth(self.view.bounds);
-    NSInteger index = (scrollView.contentOffset.x + 10) / width;
-    [self selectVcAtIndex:index];
-    self.currentVc = _subVcs[index];
+    if (scrollView == _bgScrollview) {
+        CGFloat width = CGRectGetWidth(self.view.bounds);
+        NSInteger index = (scrollView.contentOffset.x + 10) / width;
+        [self selectVcAtIndex:index];
+        self.currentVc = _subVcs[index];
+    }
 }
 
 @end
