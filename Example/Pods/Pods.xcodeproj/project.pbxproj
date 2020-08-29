@@ -7,71 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BF8774434C97143874455A1608C7B4 /* KYHeaderRefreshMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 286007700190D3CFBDE2DC50F98E0777 /* KYHeaderRefreshMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0395716ED84A54C901EB31977D19CCD1 /* KYHeaderRefreshMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1C82C3030E96EAD54509FAECB0BAC /* KYHeaderRefreshMultiViewController.m */; };
 		050A189DF0B4F405E9D3389F24EDF835 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A303347EEC803EB0F0CFA9EF0DE9E5 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06AEA7117FE98F2409D2432AAEC326A8 /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B61EDE914D444EFEF221AE6116731B /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08C182712E236EF44F2B0A40CDF73102 /* KYHeaderRefreshMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2481E0B1AB43ECE472059A2C09B3A632 /* KYHeaderRefreshMultiViewController.m */; };
 		0AECE221BADEA19083FC0CACE5973D8A /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB66A2B2F995E279B686097A4A88F48 /* MJRefreshFooter.m */; };
-		0F2287FDB1E4D0091DEB8DC8C23A374B /* KYTopRefreshMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F4248A05197A73E3C8A22A67DEAC3C /* KYTopRefreshMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F47C7DE634D4FE07B595912093139FE /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B19310E3CD07CD99102FDDD69723C08 /* MJRefresh.bundle */; };
+		0FF65CF62709EAE9279BF4A772D83B3B /* KYMultiScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02321C25B4062BAF4E75207DA31E52CD /* KYMultiScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13611CB0839D7F8C3EFCB9F9ED5495BD /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 7155B1176EA63625A6A4247708177F4C /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2185E6949E498407B0243B03D5056CD0 /* Pods-KYMultiScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 787B2F0DADEAA5AB22A347C483B7DA5D /* Pods-KYMultiScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2231C375AE642FE084C2B696244BB194 /* KYMultiScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4720BD574D71672FFF9379F2C5C26CD3 /* KYMultiScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22513825A54DC9B8C23BF0CC7F45B00F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D2D9769334AA7745727BC97BE98D35 /* MJRefreshConst.m */; };
-		27E96A82E0D847272EA29F120223302C /* KYMultiHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AE05DFE4D2AC90B8456E683ADF25C6 /* KYMultiHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31B13D3FEB38EAAABCA0CBC531ACF4BC /* KYHeaderRefreshMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D4992281F65E356435D2553B9982B /* KYHeaderRefreshMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39172F66777E6BC6EBFFC5948E3CC765 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A3966C677EE705C59899A45A91F01618 /* MJRefreshNormalHeader.m */; };
 		3E39686763C657D80DB3AAF9D070170A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4055A0ACF4681DEA04E2F0AECD0B97B2 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40F8F4A4B92E008B058331E1DAD1F /* UIScrollView+MJRefresh.m */; };
-		427BE31E24F900E400D81C71 /* KYTopRefreshVcProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 427BE31D24F900E400D81C71 /* KYTopRefreshVcProtocol.h */; };
+		431B5D3508ADC07B83805B236729E18D /* KYMultiScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F18E73E454CAE444CD4A2B3888BD89B /* KYMultiScrollView-dummy.m */; };
 		45626116C19AA54A2359E85DAEB5AD42 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A328E4AB790C666957BE840EEFD87A0 /* UIScrollView+MJExtension.m */; };
 		4583409C21FCF11CB11FE51B0B235A00 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E83D8EF0F45FB29281E9917C0840BB /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47C5E12941194A00ED65EECCD1E4B9C3 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1DD0895A1E2D59A8E36E341EEA3C5 /* MJRefreshComponent.m */; };
 		4F5A97CA16447E2BDF919A40C1652E9F /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 20919130445CC50B553C803BC704B895 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		528237787EC24E25AD6BB486B1BEBE5D /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC27F2B4EC1738411C97D9671C7F9DA /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		595527C54E24251571AA3B9E61D616BE /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDEA68299BD0DB3D35B98777C6EC909 /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59B0351CBD32C3A1572A5C2BF62277A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		5A384A2C99EB807D449323F9814098A9 /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB596EF3E96E6EBF8B8982954A071 /* MJRefresh-dummy.m */; };
-		60C26AC5B7BF6BB748A851562042B6E0 /* KYMultiHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE57955D4A6B22545853C6F0F4D6E88 /* KYMultiHeadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61EF33C64C26EDF6A86430C30CCC8125 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6AE4F4B2DD9C6F1A53729914181FB5 /* MJRefreshAutoFooter.m */; };
 		64FAE071FA6CADC6F4543DCD82705D12 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A43B7B975CDB2330FC2D858555166C8 /* UIView+MJExtension.m */; };
 		675F8319809B90A18BB685E1EA09F886 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DB983951866FF0FB864D9B4E520D1 /* MJRefreshAutoNormalFooter.m */; };
-		68CA806AAA8D3AFC9F581AD30E98D574 /* KYMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC3D7A2B3D802842D8BFC47C19C6C20 /* KYMultiViewController.m */; };
 		696BEC58A027BCCDFB378637C75C78A5 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC16C56785B09BDB098FA2489E75878F /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C1461ED2AF53643934B4B97E9BB8A7D /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F018543BA52C0DAC07D7EB59CC59975 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		710200F11DC7A1879D4DD570EAC49AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		830FFBDEADF383BF5F334F7DD09AD0AF /* KYMultiHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4A2CE9C9E43A8E97209E5B3E23DF24 /* KYMultiHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		839C66F186BB56F4ED7E04B9A9BE435A /* KYMultiHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E018A5278E227331D794E0EA21CAEF8 /* KYMultiHeadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		852887173A1F802E93E8BF3FEDD3B8BD /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = F91E97AF1917A4887608CB4A4F52FD5C /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85DBD599545B98F7AB17B94C86A4DC37 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFBAB43B088997DD85DFDD32030FFEF /* MJRefreshGifHeader.m */; };
 		8638BD5B0012059ABB8B3C588633667C /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2969C4BF8BDE8EE6D2F2D1D3FE2DC0AE /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86F2E53F22F26D2D030CA8ED679B5266 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA942F9FC54C26FFD454520683033D90 /* MJRefreshBackFooter.m */; };
 		89407BE103B6AA73E90C8E0EF0C1AA08 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC049172A30B3223AA3535853E5AF2 /* MJRefreshAutoGifFooter.m */; };
-		8B154AECD3656CD59D28F4BBD3B78354 /* KYMultiScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C93686AA00049BFD5F79156AEB38346F /* KYMultiScrollView-dummy.m */; };
+		8D3939BE20308A0FA9664E11CCB36AEC /* KYTopRefreshVcProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9F6D3F6B2072A94B4EF9D8664BA9BB /* KYTopRefreshVcProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F736DFA1256E8BE2DCC41F66F2A2561 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C11F500618AD5C0EE0177C72E19B69 /* MJRefreshHeader.m */; };
-		9062FF3DE7E707039751198FDE358145 /* KYTopRefreshMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4693D4C98969F7F03088866EA6731810 /* KYTopRefreshMultiViewController.m */; };
 		94940A2C852223F20EE7ED83A9BB5179 /* MJRefreshConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 13339018C5D041626A85A28A91D3E550 /* MJRefreshConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95BD9ECE799ABE9F7F41DB1D4F44DE31 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6FD6EB04615132851B436F214F4EC5 /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9791BD6CA4B327E65C688CF072C827DC /* KYMultiScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DEFEEA9E34BF4824FF6E1D332BCF96 /* KYMultiScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A240040CF90E46E8BA0E3B1FE45DBDCE /* KYHeaderRefreshVcProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E764706CAA24CC4BB67E5B907D66796 /* KYHeaderRefreshVcProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F96E2D50994D95ED425AC2435D3C8A /* KYTopRefreshMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E502EFAEDDB63E673412B97D88442F /* KYTopRefreshMultiViewController.m */; };
 		A7B257D75993F5C90FAEEB16780CC215 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AF72E8DE6DAB09CE8B8AF9A85E1DE699 /* NSBundle+MJRefresh.m */; };
 		A8F266741C653EAED3DD49D75DB9D5A8 /* MJRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C11FECEDF683DF9CB9CEB573484B6CC4 /* MJRefreshConfig.m */; };
 		AA5F359B86973F47D34F4A0FD745E4EC /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7017F2751BB577FBF465BA0619EF58A7 /* MJRefreshStateHeader.m */; };
 		AEB3E4E55D6B4F5DB22F983EDE1822D6 /* Pods-KYMultiScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D403AE5F45A208F1AE195C0E803677 /* Pods-KYMultiScrollView_Tests-dummy.m */; };
 		B545FC64504EB25999F30CFC1E27E702 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 950777F9E11EB765DB3CE9B512BA4E33 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA674A1306184D5B74D26204DEF29A50 /* KYMultiHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F01981435BAC7DDA9711C94B2AB245 /* KYMultiHeadView.m */; };
 		BB731352365917DE67BDC75358B55083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BD9A09840189D37657887D1467CAA330 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CCBFB2C12764F70EA8AE44853240A082 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C06D0B27A5CD93588C9A2918100D7F63 /* KYHeaderRefreshVcProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E367241C7A95BD7F47AAF5BF404A14E /* KYHeaderRefreshVcProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0B2C760334561E4910FADD8520C85C3 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C541DAEE477707D736D9CB01A49A255 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C12539ABFEAC82E0BDF0A0F5321CC889 /* Pods-KYMultiScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6226D5752B761CF732BF21F6816F3B8C /* Pods-KYMultiScrollView_Example-dummy.m */; };
-		C182ADEE838AC51726A53F4622DFA113 /* KYMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F3ECFFD5DF9DF6E35AD25C4E028739 /* KYMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAE8F9756A69778C8FFE70EF849E9617 /* KYMultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75681853F9FBC1FB4733590E37DDC6 /* KYMultiViewController.m */; };
 		CBDC089A3E26FC6825F64E078195BF01 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 172ADF6B76FE4FB0911BE9A8B2638580 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC6EFDEB37660867271E4C948B670D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		CE7004AFA3B30D672A4DD9B4D3E6915B /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8309F3F61949BD34782D2E7C53571B /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D476A1AD427ED4B951ACCB95459033CC /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB3FF19772B6DF80EBCCCF49FC631D7 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D488261C2229AC2CEF2365B1F6932AC1 /* KYMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA804E315FD5C95DCD9AA8F89AD3C117 /* KYMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8328429281E82F67DB47AF6C9D95191 /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = A58B1BEDCAB842F5FE1EF6222A12838C /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D99E09FA56F9585B172A4DD344FB2671 /* KYMultiHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7DDA59E8F22AC7D0D5601B3B61DE0 /* KYMultiHeadView.m */; };
 		DCCC7E7E734A732901932B2E9D662EE7 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A91F27B033BC8597593DA4F3797E3CE9 /* MJRefreshAutoStateFooter.m */; };
+		E910DFFCD108339CCC5BCA5D7AAFB4A7 /* KYTopRefreshMultiViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2226A3C3A287F8851897AEEC30E2BD08 /* KYTopRefreshMultiViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAE95ABC5843C0C369203D5D70BD9B7F /* Pods-KYMultiScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 423BA80C11710C048A68961C4B3B01B7 /* Pods-KYMultiScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB209DF5DE13F4D802DA1BE20A9CEBD2 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA245FD8CBCDD767FD533863BE1E6 /* MJRefreshBackStateFooter.m */; };
 		ED3E2C1051BAC5B50BE441D95D8801C0 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BABA745ECEABD779DED456A3225A2F5E /* MJRefreshBackGifFooter.m */; };
 		EECE40C6F296379F86ABB36AF79BB8EC /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E457105F885C5E7DD18759E6D8B6B972 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F57BA25385E6996D6EC18EDD97E596FE /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BFB2CB10670A552B4E64D721CB7E3B /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8ECCAF5B05FD3A0512A94B55EB52B04 /* KYMultiScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB43C5625B8F2D4AB3F54B6AA7A20F13 /* KYMultiScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE350422B39C5EA00E5AA552F6D218FB /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E3682AAD93CCE585CF9AA2B8BDEC7B /* MJRefreshBackNormalFooter.m */; };
 /* End PBXBuildFile section */
 
@@ -100,11 +100,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02321C25B4062BAF4E75207DA31E52CD /* KYMultiScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiScrollView.h; sourceTree = "<group>"; };
 		043AA245FD8CBCDD767FD533863BE1E6 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
 		0788A7132222761BBE7E3B8B4128A70B /* KYMultiScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYMultiScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09F3ECFFD5DF9DF6E35AD25C4E028739 /* KYMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiViewController.h; sourceTree = "<group>"; };
-		0AF9E62AA1FFCCADE90C83151F5B2034 /* KYMultiScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KYMultiScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0FC27F2B4EC1738411C97D9671C7F9DA /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		0FD1C82C3030E96EAD54509FAECB0BAC /* KYHeaderRefreshMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYHeaderRefreshMultiViewController.m; sourceTree = "<group>"; };
 		10E83D8EF0F45FB29281E9917C0840BB /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		12A303347EEC803EB0F0CFA9EF0DE9E5 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		13339018C5D041626A85A28A91D3E550 /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
@@ -112,42 +112,38 @@
 		19732C208C6D11637F49B429C329C3E5 /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
 		1A328E4AB790C666957BE840EEFD87A0 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
 		1A43B7B975CDB2330FC2D858555166C8 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
-		1FB21E4C4185BFF22FE5F6B6A99F37DC /* KYMultiScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYMultiScrollView.debug.xcconfig; sourceTree = "<group>"; };
+		1F3FFF593DBEFE53C72694BA271BAEC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FD1E7817D2CEBFE857D28D851D1EDB6 /* Pods-KYMultiScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KYMultiScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		20919130445CC50B553C803BC704B895 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		2099440485E2CE60028DF7E3B434BAAF /* Pods-KYMultiScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KYMultiScrollView_Example.modulemap"; sourceTree = "<group>"; };
+		2226A3C3A287F8851897AEEC30E2BD08 /* KYTopRefreshMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYTopRefreshMultiViewController.h; sourceTree = "<group>"; };
 		2308762C042F4F94014707BC72E963ED /* Pods-KYMultiScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KYMultiScrollView_Tests.modulemap"; sourceTree = "<group>"; };
-		2481E0B1AB43ECE472059A2C09B3A632 /* KYHeaderRefreshMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYHeaderRefreshMultiViewController.m; sourceTree = "<group>"; };
 		24FC049172A30B3223AA3535853E5AF2 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
-		286007700190D3CFBDE2DC50F98E0777 /* KYHeaderRefreshMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYHeaderRefreshMultiViewController.h; sourceTree = "<group>"; };
 		2969C4BF8BDE8EE6D2F2D1D3FE2DC0AE /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		29D40F8F4A4B92E008B058331E1DAD1F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		2E764706CAA24CC4BB67E5B907D66796 /* KYHeaderRefreshVcProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYHeaderRefreshVcProtocol.h; sourceTree = "<group>"; };
+		2A9416981F0ADFAD144544023C081770 /* KYMultiScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KYMultiScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		32F4248A05197A73E3C8A22A67DEAC3C /* KYTopRefreshMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYTopRefreshMultiViewController.h; sourceTree = "<group>"; };
 		3A001CC914D1DD8C97ADC0D74431647C /* Pods_KYMultiScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMultiScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D75681853F9FBC1FB4733590E37DDC6 /* KYMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYMultiViewController.m; sourceTree = "<group>"; };
 		423BA80C11710C048A68961C4B3B01B7 /* Pods-KYMultiScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KYMultiScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		427BE31D24F900E400D81C71 /* KYTopRefreshVcProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYTopRefreshVcProtocol.h; sourceTree = "<group>"; };
-		4693D4C98969F7F03088866EA6731810 /* KYTopRefreshMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYTopRefreshMultiViewController.m; sourceTree = "<group>"; };
-		4720BD574D71672FFF9379F2C5C26CD3 /* KYMultiScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYMultiScrollView-umbrella.h"; sourceTree = "<group>"; };
 		4BF630ECD1ADAEABEB9C9CD214FE70D2 /* MJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.release.xcconfig; sourceTree = "<group>"; };
-		4FF382135EC7AAD1C14B1B45D6C73EB0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4E018A5278E227331D794E0EA21CAEF8 /* KYMultiHeadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiHeadView.h; sourceTree = "<group>"; };
+		5E367241C7A95BD7F47AAF5BF404A14E /* KYHeaderRefreshVcProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYHeaderRefreshVcProtocol.h; sourceTree = "<group>"; };
+		5F18E73E454CAE444CD4A2B3888BD89B /* KYMultiScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYMultiScrollView-dummy.m"; sourceTree = "<group>"; };
+		60F01981435BAC7DDA9711C94B2AB245 /* KYMultiHeadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYMultiHeadView.m; sourceTree = "<group>"; };
 		6226D5752B761CF732BF21F6816F3B8C /* Pods-KYMultiScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KYMultiScrollView_Example-dummy.m"; sourceTree = "<group>"; };
 		64121E87CAAE161B3A84583DD27AFF03 /* Pods-KYMultiScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KYMultiScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		687D2B8D91F283172B89A720DE4E718A /* KYMultiScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYMultiScrollView.debug.xcconfig; sourceTree = "<group>"; };
 		68B61EDE914D444EFEF221AE6116731B /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
-		6EE57955D4A6B22545853C6F0F4D6E88 /* KYMultiHeadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiHeadView.h; sourceTree = "<group>"; };
 		6F018543BA52C0DAC07D7EB59CC59975 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		7017F2751BB577FBF465BA0619EF58A7 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
 		7155B1176EA63625A6A4247708177F4C /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
-		76AE05DFE4D2AC90B8456E683ADF25C6 /* KYMultiHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiHeader.h; sourceTree = "<group>"; };
 		77BFB2CB10670A552B4E64D721CB7E3B /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
 		787B2F0DADEAA5AB22A347C483B7DA5D /* Pods-KYMultiScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KYMultiScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
-		79DCA6B494786A1FAE94CEA8B30DDE41 /* KYMultiScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYMultiScrollView-prefix.pch"; sourceTree = "<group>"; };
+		787D4992281F65E356435D2553B9982B /* KYHeaderRefreshMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYHeaderRefreshMultiViewController.h; sourceTree = "<group>"; };
 		7DA74E1B3580001FD81262802B76882E /* Pods-KYMultiScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KYMultiScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7FE7DDA59E8F22AC7D0D5601B3B61DE0 /* KYMultiHeadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYMultiHeadView.m; sourceTree = "<group>"; };
 		8256CCD4EEDF3115E7D5542A29F5B808 /* Pods_KYMultiScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYMultiScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C43D66EA07C83A8AFD94442B8308E2 /* Pods-KYMultiScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KYMultiScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8A2EEF5D8BB4FEC4C7C1F0677437F244 /* KYMultiScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KYMultiScrollView-Info.plist"; sourceTree = "<group>"; };
 		8A8309F3F61949BD34782D2E7C53571B /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		8C4CB643852CACCCDD3E8BD293BD3C1E /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		8C541DAEE477707D736D9CB01A49A255 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
@@ -156,32 +152,35 @@
 		9787D949741EBA8B365435484888D8EE /* Pods-KYMultiScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KYMultiScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9B19310E3CD07CD99102FDDD69723C08 /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		9C7048D3BD1DD8DA328C8F3D17537A77 /* Pods-KYMultiScrollView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KYMultiScrollView_Tests-Info.plist"; sourceTree = "<group>"; };
+		9C9F6D3F6B2072A94B4EF9D8664BA9BB /* KYTopRefreshVcProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYTopRefreshVcProtocol.h; sourceTree = "<group>"; };
 		9CE1DD0895A1E2D59A8E36E341EEA3C5 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		9D09586D5D4EF1D0D2BB195C82910F07 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A34E1FAEBA9DD21AA749AA3B2BAA2CB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9E4A2CE9C9E43A8E97209E5B3E23DF24 /* KYMultiHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiHeader.h; sourceTree = "<group>"; };
 		A3966C677EE705C59899A45A91F01618 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
 		A4D403AE5F45A208F1AE195C0E803677 /* Pods-KYMultiScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KYMultiScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
 		A58B1BEDCAB842F5FE1EF6222A12838C /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
-		A5DEFEEA9E34BF4824FF6E1D332BCF96 /* KYMultiScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiScrollView.h; sourceTree = "<group>"; };
 		A91F27B033BC8597593DA4F3797E3CE9 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
 		A9C11F500618AD5C0EE0177C72E19B69 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
+		AB43C5625B8F2D4AB3F54B6AA7A20F13 /* KYMultiScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYMultiScrollView-umbrella.h"; sourceTree = "<group>"; };
 		AC16C56785B09BDB098FA2489E75878F /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		AF72E8DE6DAB09CE8B8AF9A85E1DE699 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		AFDEA68299BD0DB3D35B98777C6EC909 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		B1E502EFAEDDB63E673412B97D88442F /* KYTopRefreshMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYTopRefreshMultiViewController.m; sourceTree = "<group>"; };
 		B98DB983951866FF0FB864D9B4E520D1 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		BABA745ECEABD779DED456A3225A2F5E /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		BBDE8210C64BC1A5C2D5A49DF898D5B0 /* Pods-KYMultiScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KYMultiScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BDFBAB43B088997DD85DFDD32030FFEF /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
-		C0157F0106EDA1D4E246D95578676394 /* KYMultiScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYMultiScrollView.release.xcconfig; sourceTree = "<group>"; };
 		C11FECEDF683DF9CB9CEB573484B6CC4 /* MJRefreshConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConfig.m; path = MJRefresh/MJRefreshConfig.m; sourceTree = "<group>"; };
-		C93686AA00049BFD5F79156AEB38346F /* KYMultiScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYMultiScrollView-dummy.m"; sourceTree = "<group>"; };
+		C76AE229ED7FEC75EEA1AA5EBF086A16 /* KYMultiScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KYMultiScrollView-Info.plist"; sourceTree = "<group>"; };
+		C78A58512BAB1E06596D585BDEFD028D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CCB3FF19772B6DF80EBCCCF49FC631D7 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		CCBFB2C12764F70EA8AE44853240A082 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		CD06149BFC43DDD411E5B020498F5D93 /* Pods-KYMultiScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KYMultiScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CF6FD6EB04615132851B436F214F4EC5 /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
+		CF768387246AE2B7B30C2DCBD9DCFC0A /* KYMultiScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYMultiScrollView-prefix.pch"; sourceTree = "<group>"; };
+		D988374A4DF27F87E509AB859CF9667A /* KYMultiScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KYMultiScrollView.modulemap; sourceTree = "<group>"; };
 		DA942F9FC54C26FFD454520683033D90 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
-		DAC3D7A2B3D802842D8BFC47C19C6C20 /* KYMultiViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KYMultiViewController.m; sourceTree = "<group>"; };
 		DD3DFCB22362DDE44747AB900B34C779 /* Pods-KYMultiScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KYMultiScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF20CA04E61334BBA76E18BB4B17F77D /* MJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJRefresh-Info.plist"; sourceTree = "<group>"; };
 		E457105F885C5E7DD18759E6D8B6B972 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
@@ -189,11 +188,12 @@
 		E4E3682AAD93CCE585CF9AA2B8BDEC7B /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		E56EB596EF3E96E6EBF8B8982954A071 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
 		E8D2D9769334AA7745727BC97BE98D35 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
-		EB6117D53FFE42F4AFE3B80DF183770F /* KYMultiScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KYMultiScrollView.modulemap; sourceTree = "<group>"; };
 		EDB66A2B2F995E279B686097A4A88F48 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		F1E68360039A9178A2177E2A9196307F /* Pods-KYMultiScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KYMultiScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F5367CD6B0FFECE51DEB18B53111C29E /* Pods-KYMultiScrollView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KYMultiScrollView_Example-Info.plist"; sourceTree = "<group>"; };
 		F91E97AF1917A4887608CB4A4F52FD5C /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		FA804E315FD5C95DCD9AA8F89AD3C117 /* KYMultiViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KYMultiViewController.h; sourceTree = "<group>"; };
+		FFFC87265EFA013F5FDEC8D5E5868152 /* KYMultiScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYMultiScrollView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +202,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				710200F11DC7A1879D4DD570EAC49AEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2038881FF2B75298FAD207A9244CE38D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B0351CBD32C3A1572A5C2BF62277A7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,23 +229,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBEBA4C3A2C8B72C8F4D2FE2A92E764A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC6EFDEB37660867271E4C948B670D1B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0667457EFA58725B86E5FF42E694511C /* Pod */ = {
+		0AFFB0AB5834F4DF34EBBC39D4EE7793 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0AF9E62AA1FFCCADE90C83151F5B2034 /* KYMultiScrollView.podspec */,
-				A34E1FAEBA9DD21AA749AA3B2BAA2CB8 /* LICENSE */,
-				4FF382135EC7AAD1C14B1B45D6C73EB0 /* README.md */,
+				2A9416981F0ADFAD144544023C081770 /* KYMultiScrollView.podspec */,
+				C78A58512BAB1E06596D585BDEFD028D /* LICENSE */,
+				1F3FFF593DBEFE53C72694BA271BAEC9 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -266,40 +266,16 @@
 			path = "../Target Support Files/MJRefresh";
 			sourceTree = "<group>";
 		};
-		2AC8E65BEE7635770CE37542B6A42CA5 /* KYMultiScrollView */ = {
+		532DA91F10A2B90C6A18524611F9BD5A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE56024B537D5765C4A470CDD6B00489 /* Base */,
-				3C58FB69065FACE33DDD005EDBCB6B75 /* HeaderRefresh */,
-				0667457EFA58725B86E5FF42E694511C /* Pod */,
-				4CF4A1C88552F0741BCCB292D97ACA8E /* Support Files */,
-				E2634CEC3916C837543561D536093FAD /* TopRefresh */,
-			);
-			name = KYMultiScrollView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		3C58FB69065FACE33DDD005EDBCB6B75 /* HeaderRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				286007700190D3CFBDE2DC50F98E0777 /* KYHeaderRefreshMultiViewController.h */,
-				2481E0B1AB43ECE472059A2C09B3A632 /* KYHeaderRefreshMultiViewController.m */,
-				2E764706CAA24CC4BB67E5B907D66796 /* KYHeaderRefreshVcProtocol.h */,
-			);
-			name = HeaderRefresh;
-			path = KYMultiScrollView/Classes/HeaderRefresh;
-			sourceTree = "<group>";
-		};
-		4CF4A1C88552F0741BCCB292D97ACA8E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EB6117D53FFE42F4AFE3B80DF183770F /* KYMultiScrollView.modulemap */,
-				C93686AA00049BFD5F79156AEB38346F /* KYMultiScrollView-dummy.m */,
-				8A2EEF5D8BB4FEC4C7C1F0677437F244 /* KYMultiScrollView-Info.plist */,
-				79DCA6B494786A1FAE94CEA8B30DDE41 /* KYMultiScrollView-prefix.pch */,
-				4720BD574D71672FFF9379F2C5C26CD3 /* KYMultiScrollView-umbrella.h */,
-				1FB21E4C4185BFF22FE5F6B6A99F37DC /* KYMultiScrollView.debug.xcconfig */,
-				C0157F0106EDA1D4E246D95578676394 /* KYMultiScrollView.release.xcconfig */,
+				D988374A4DF27F87E509AB859CF9667A /* KYMultiScrollView.modulemap */,
+				5F18E73E454CAE444CD4A2B3888BD89B /* KYMultiScrollView-dummy.m */,
+				C76AE229ED7FEC75EEA1AA5EBF086A16 /* KYMultiScrollView-Info.plist */,
+				CF768387246AE2B7B30C2DCBD9DCFC0A /* KYMultiScrollView-prefix.pch */,
+				AB43C5625B8F2D4AB3F54B6AA7A20F13 /* KYMultiScrollView-umbrella.h */,
+				687D2B8D91F283172B89A720DE4E718A /* KYMultiScrollView.debug.xcconfig */,
+				FFFC87265EFA013F5FDEC8D5E5868152 /* KYMultiScrollView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KYMultiScrollView";
@@ -308,9 +284,31 @@
 		66EBB1429C1B263E2F49676A9EB42ED3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2AC8E65BEE7635770CE37542B6A42CA5 /* KYMultiScrollView */,
+				9AF720308146AC02D331D350052784AF /* KYMultiScrollView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DDEEA5E9A329997D1DED47D249DB8F9 /* HeaderRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				787D4992281F65E356435D2553B9982B /* KYHeaderRefreshMultiViewController.h */,
+				0FD1C82C3030E96EAD54509FAECB0BAC /* KYHeaderRefreshMultiViewController.m */,
+				5E367241C7A95BD7F47AAF5BF404A14E /* KYHeaderRefreshVcProtocol.h */,
+			);
+			name = HeaderRefresh;
+			path = KYMultiScrollView/Classes/HeaderRefresh;
+			sourceTree = "<group>";
+		};
+		89AB189B16850B7B3B52C1565E867452 /* TopRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				2226A3C3A287F8851897AEEC30E2BD08 /* KYTopRefreshMultiViewController.h */,
+				9C9F6D3F6B2072A94B4EF9D8664BA9BB /* KYTopRefreshVcProtocol.h */,
+				B1E502EFAEDDB63E673412B97D88442F /* KYTopRefreshMultiViewController.m */,
+			);
+			name = TopRefresh;
+			path = KYMultiScrollView/Classes/TopRefresh;
 			sourceTree = "<group>";
 		};
 		9615B47872DE228B2832B10ABB71B8C4 /* MJRefresh */ = {
@@ -363,6 +361,19 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		9AF720308146AC02D331D350052784AF /* KYMultiScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AE4458A11287D0173665A287F7BCE657 /* Base */,
+				7DDEEA5E9A329997D1DED47D249DB8F9 /* HeaderRefresh */,
+				0AFFB0AB5834F4DF34EBBC39D4EE7793 /* Pod */,
+				532DA91F10A2B90C6A18524611F9BD5A /* Support Files */,
+				89AB189B16850B7B3B52C1565E867452 /* TopRefresh */,
+			);
+			name = KYMultiScrollView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		9E23D36BC80CBBAA3CDB533FBF7D7A59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +401,20 @@
 			path = "Target Support Files/Pods-KYMultiScrollView_Tests";
 			sourceTree = "<group>";
 		};
+		AE4458A11287D0173665A287F7BCE657 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9E4A2CE9C9E43A8E97209E5B3E23DF24 /* KYMultiHeader.h */,
+				4E018A5278E227331D794E0EA21CAEF8 /* KYMultiHeadView.h */,
+				60F01981435BAC7DDA9711C94B2AB245 /* KYMultiHeadView.m */,
+				02321C25B4062BAF4E75207DA31E52CD /* KYMultiScrollView.h */,
+				FA804E315FD5C95DCD9AA8F89AD3C117 /* KYMultiViewController.h */,
+				3D75681853F9FBC1FB4733590E37DDC6 /* KYMultiViewController.m */,
+			);
+			name = Base;
+			path = KYMultiScrollView/Classes/Base;
+			sourceTree = "<group>";
+		};
 		BB386370A5F73967415AB79F399C8E5B /* Pods-KYMultiScrollView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,20 +430,6 @@
 			);
 			name = "Pods-KYMultiScrollView_Example";
 			path = "Target Support Files/Pods-KYMultiScrollView_Example";
-			sourceTree = "<group>";
-		};
-		BE56024B537D5765C4A470CDD6B00489 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				76AE05DFE4D2AC90B8456E683ADF25C6 /* KYMultiHeader.h */,
-				6EE57955D4A6B22545853C6F0F4D6E88 /* KYMultiHeadView.h */,
-				7FE7DDA59E8F22AC7D0D5601B3B61DE0 /* KYMultiHeadView.m */,
-				A5DEFEEA9E34BF4824FF6E1D332BCF96 /* KYMultiScrollView.h */,
-				09F3ECFFD5DF9DF6E35AD25C4E028739 /* KYMultiViewController.h */,
-				DAC3D7A2B3D802842D8BFC47C19C6C20 /* KYMultiViewController.m */,
-			);
-			name = Base;
-			path = KYMultiScrollView/Classes/Base;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -457,17 +468,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E2634CEC3916C837543561D536093FAD /* TopRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				32F4248A05197A73E3C8A22A67DEAC3C /* KYTopRefreshMultiViewController.h */,
-				4693D4C98969F7F03088866EA6731810 /* KYTopRefreshMultiViewController.m */,
-				427BE31D24F900E400D81C71 /* KYTopRefreshVcProtocol.h */,
-			);
-			name = TopRefresh;
-			path = KYMultiScrollView/Classes/TopRefresh;
-			sourceTree = "<group>";
-		};
 		F7FAD2F46C64E5EA51757FAF89239427 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,27 +479,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		10B67E5183082DE3C7B10840991AE310 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02BF8774434C97143874455A1608C7B4 /* KYHeaderRefreshMultiViewController.h in Headers */,
-				A240040CF90E46E8BA0E3B1FE45DBDCE /* KYHeaderRefreshVcProtocol.h in Headers */,
-				27E96A82E0D847272EA29F120223302C /* KYMultiHeader.h in Headers */,
-				60C26AC5B7BF6BB748A851562042B6E0 /* KYMultiHeadView.h in Headers */,
-				2231C375AE642FE084C2B696244BB194 /* KYMultiScrollView-umbrella.h in Headers */,
-				427BE31E24F900E400D81C71 /* KYTopRefreshVcProtocol.h in Headers */,
-				9791BD6CA4B327E65C688CF072C827DC /* KYMultiScrollView.h in Headers */,
-				C182ADEE838AC51726A53F4622DFA113 /* KYMultiViewController.h in Headers */,
-				0F2287FDB1E4D0091DEB8DC8C23A374B /* KYTopRefreshMultiViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		55D8F85F3B13FB62F316FB52B60592A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAE95ABC5843C0C369203D5D70BD9B7F /* Pods-KYMultiScrollView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98AFCE2E520E4F6005960FA727A5AA36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B13D3FEB38EAAABCA0CBC531ACF4BC /* KYHeaderRefreshMultiViewController.h in Headers */,
+				C06D0B27A5CD93588C9A2918100D7F63 /* KYHeaderRefreshVcProtocol.h in Headers */,
+				830FFBDEADF383BF5F334F7DD09AD0AF /* KYMultiHeader.h in Headers */,
+				839C66F186BB56F4ED7E04B9A9BE435A /* KYMultiHeadView.h in Headers */,
+				F8ECCAF5B05FD3A0512A94B55EB52B04 /* KYMultiScrollView-umbrella.h in Headers */,
+				0FF65CF62709EAE9279BF4A772D83B3B /* KYMultiScrollView.h in Headers */,
+				D488261C2229AC2CEF2365B1F6932AC1 /* KYMultiViewController.h in Headers */,
+				E910DFFCD108339CCC5BCA5D7AAFB4A7 /* KYTopRefreshMultiViewController.h in Headers */,
+				8D3939BE20308A0FA9664E11CCB36AEC /* KYTopRefreshVcProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,12 +545,12 @@
 /* Begin PBXNativeTarget section */
 		29DC1E2BC9BE0DA3C87EDFC1FEAF49B7 /* KYMultiScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3515DEC24DB1FB5FCFBF1CF04ACD40F4 /* Build configuration list for PBXNativeTarget "KYMultiScrollView" */;
+			buildConfigurationList = FD1254B08400DE1A0EDE77F75FA67CCD /* Build configuration list for PBXNativeTarget "KYMultiScrollView" */;
 			buildPhases = (
-				10B67E5183082DE3C7B10840991AE310 /* Headers */,
-				0C84989E6AA0A208B364837381E0AD97 /* Sources */,
-				EBEBA4C3A2C8B72C8F4D2FE2A92E764A /* Frameworks */,
-				9449A9AC1FBC14F6BD754CB191044DA4 /* Resources */,
+				98AFCE2E520E4F6005960FA727A5AA36 /* Headers */,
+				287EB54DDA534A699742C11AAEE3A002 /* Sources */,
+				2038881FF2B75298FAD207A9244CE38D /* Frameworks */,
+				C67FB935D8E06AD35482BAF76B686557 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -649,18 +649,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9449A9AC1FBC14F6BD754CB191044DA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B766E016B71C008CD9AF7646AD9C6F70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0F47C7DE634D4FE07B595912093139FE /* MJRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67FB935D8E06AD35482BAF76B686557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,15 +681,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C84989E6AA0A208B364837381E0AD97 /* Sources */ = {
+		287EB54DDA534A699742C11AAEE3A002 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08C182712E236EF44F2B0A40CDF73102 /* KYHeaderRefreshMultiViewController.m in Sources */,
-				D99E09FA56F9585B172A4DD344FB2671 /* KYMultiHeadView.m in Sources */,
-				8B154AECD3656CD59D28F4BBD3B78354 /* KYMultiScrollView-dummy.m in Sources */,
-				68CA806AAA8D3AFC9F581AD30E98D574 /* KYMultiViewController.m in Sources */,
-				9062FF3DE7E707039751198FDE358145 /* KYTopRefreshMultiViewController.m in Sources */,
+				0395716ED84A54C901EB31977D19CCD1 /* KYHeaderRefreshMultiViewController.m in Sources */,
+				BA674A1306184D5B74D26204DEF29A50 /* KYMultiHeadView.m in Sources */,
+				431B5D3508ADC07B83805B236729E18D /* KYMultiScrollView-dummy.m in Sources */,
+				CAE8F9756A69778C8FFE70EF849E9617 /* KYMultiViewController.m in Sources */,
+				99F96E2D50994D95ED425AC2435D3C8A /* KYTopRefreshMultiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +761,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0BF1A6A31F463DEBA475985BF070F432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFC87265EFA013F5FDEC8D5E5868152 /* KYMultiScrollView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KYMultiScrollView/KYMultiScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYMultiScrollView/KYMultiScrollView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYMultiScrollView/KYMultiScrollView.modulemap";
+				PRODUCT_MODULE_NAME = KYMultiScrollView;
+				PRODUCT_NAME = KYMultiScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		11E6E61B50C5C8A4CEA72CBFEEF64088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1E68360039A9178A2177E2A9196307F /* Pods-KYMultiScrollView_Example.release.xcconfig */;
@@ -795,9 +827,9 @@
 			};
 			name = Release;
 		};
-		18823C7161C60662824BDA452D0B3CFD /* Release */ = {
+		14558869C7293436DC3DEFB518F4E830 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0157F0106EDA1D4E246D95578676394 /* KYMultiScrollView.release.xcconfig */;
+			baseConfigurationReference = 687D2B8D91F283172B89A720DE4E718A /* KYMultiScrollView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -821,11 +853,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -885,37 +916,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		51E05350D21E6C75BA5E042A09342F49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB21E4C4185BFF22FE5F6B6A99F37DC /* KYMultiScrollView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KYMultiScrollView/KYMultiScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KYMultiScrollView/KYMultiScrollView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KYMultiScrollView/KYMultiScrollView.modulemap";
-				PRODUCT_MODULE_NAME = KYMultiScrollView;
-				PRODUCT_NAME = KYMultiScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		64EA0D8C84EB8A310C567CF8FF6BF06F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1147,15 +1147,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3515DEC24DB1FB5FCFBF1CF04ACD40F4 /* Build configuration list for PBXNativeTarget "KYMultiScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51E05350D21E6C75BA5E042A09342F49 /* Debug */,
-				18823C7161C60662824BDA452D0B3CFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1188,6 +1179,15 @@
 			buildConfigurations = (
 				64EA0D8C84EB8A310C567CF8FF6BF06F /* Debug */,
 				11E6E61B50C5C8A4CEA72CBFEEF64088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1254B08400DE1A0EDE77F75FA67CCD /* Build configuration list for PBXNativeTarget "KYMultiScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14558869C7293436DC3DEFB518F4E830 /* Debug */,
+				0BF1A6A31F463DEBA475985BF070F432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

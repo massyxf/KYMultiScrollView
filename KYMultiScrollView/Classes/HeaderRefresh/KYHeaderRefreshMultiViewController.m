@@ -39,12 +39,12 @@
 
 -(void)configSubVcs{
     KYWeakSelf
-    CGFloat head_height = _headView.maxShowHeight;
     [self.subVcs enumerateObjectsUsingBlock:^(UIViewController<KYHeaderRefreshVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.top = head_height;
         obj.offsetYChanged = ^(CGFloat offsetY,id<KYHeaderRefreshVcProtocol> subVc) {
             //一般的多tableview嵌套
             if (!weakSelf.headView) { return; }
+            
+            if (!subVc.scrollView) { return; }
             
             UIViewController<KYHeaderRefreshVcProtocol> *currentVc = (UIViewController<KYHeaderRefreshVcProtocol> *)weakSelf.subVcs[weakSelf.currentIndex];
             if (subVc != currentVc) { return; }
@@ -121,6 +121,12 @@
     if (!isviewLoad && _headView) {
         viewcontroller.scrollView.contentOffset = CGPointMake(0, needOffset);
     }
+    
+    //fix bug:初次加载vc时，contentInset会有意料之外的值
+    UIEdgeInsets insets = viewcontroller.scrollView.contentInset;
+    insets.top = _headView.maxShowHeight;
+    viewcontroller.scrollView.contentInset = insets;
+    
     return YES;
 }
 

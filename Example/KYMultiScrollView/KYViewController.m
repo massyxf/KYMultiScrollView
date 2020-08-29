@@ -20,6 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self headerRefreshDemo];
+}
+
+-(void)headerRefreshDemo{
+    
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     KYDemoHeadView *headView = [[KYDemoHeadView alloc] initWithFrame:CGRectMake(0, 0, width, 200)];
     headView.backgroundColor = [UIColor redColor];
@@ -27,11 +33,8 @@
     headView.minShowHeight = 50;
     
     KYDemoSubViewController *subVc1 = [[KYDemoSubViewController alloc] init];
-    subVc1.rowCount = 3;
     KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
-    subVc2.rowCount = 0;
     KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
-    subVc3.rowCount = 20;
     
     KYHeaderRefreshMultiViewController *multiVc = [[KYHeaderRefreshMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
                                                                           headView:headView

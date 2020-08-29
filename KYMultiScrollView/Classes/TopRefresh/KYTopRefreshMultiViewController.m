@@ -46,6 +46,12 @@
     if (!response) { return response; }
     UIViewController<KYTopRefreshVcProtocol> *vc = (UIViewController<KYTopRefreshVcProtocol> *)self.subVcs[self.currentIndex];
     vc.scrollView.scrollEnabled = NO;
+    
+    //fix bug:初次加载vc时，contentInset会有意料之外的值
+    UIEdgeInsets insets = vc.scrollView.contentInset;
+    insets.top = _headView.maxShowHeight;
+    vc.scrollView.contentInset = insets;
+    
     [self resetContentSizeWithVc:vc];
     return response;
 }
@@ -53,9 +59,7 @@
 #pragma mark - custom func
 -(void)configSubVc{
     KYWeakSelf
-    CGFloat head_height = _headView.maxShowHeight;
     [self.subVcs enumerateObjectsUsingBlock:^(UIViewController<KYTopRefreshVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.top = head_height;
         obj.contentSizeChanged = ^(CGSize size, UIViewController<KYTopRefreshVcProtocol> * _Nonnull vc) {
             if (vc != weakSelf.currentVc) {
                 return;

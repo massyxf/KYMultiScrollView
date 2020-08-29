@@ -7,15 +7,16 @@
 //
 
 #import <KYMultiScrollView/KYHeaderRefreshVcProtocol.h>
+#import <KYMultiScrollView/KYTopRefreshVcProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KYDemoSubViewController : UIViewController<KYHeaderRefreshVcProtocol>
-@property (nonatomic,assign)CGFloat top;
+@interface KYDemoSubViewController : UIViewController<KYHeaderRefreshVcProtocol,KYTopRefreshVcProtocol>
 
 @property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYHeaderRefreshVcProtocol>vc);
+@property (nonatomic,copy)void (^contentSizeChanged)(CGSize size,UIViewController<KYTopRefreshVcProtocol> *vc);
 
-@property (nonatomic,assign)NSInteger rowCount;
+-(void)loadData:(BOOL)isMore;
 
 @end
 

@@ -8,10 +8,10 @@
 #ifndef KYMultiScrollView_h
 #define KYMultiScrollView_h
 
-#import "KYHeaderRefreshMultiViewController.h"
-#import "KYTopRefreshMultiViewController.h"
-#import "KYHeaderRefreshVcProtocol.h"
-#import "KYMultiHeadView.h"
+#import <KYMultiScrollView/KYHeaderRefreshMultiViewController.h>
+#import <KYMultiScrollView/KYTopRefreshMultiViewController.h>
+#import <KYMultiScrollView/KYHeaderRefreshVcProtocol.h>
+#import <KYMultiScrollView/KYMultiHeadView.h>
 
 
 #endif /* KYMultiScrollView_h */

@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol KYTopRefreshVcProtocol <NSObject>
 
 @property (nonatomic,weak,readonly)UIScrollView *scrollView;
-@property (nonatomic,assign)CGFloat top;
 @property (nonatomic,copy)void (^contentSizeChanged)(CGSize size,UIViewController<KYTopRefreshVcProtocol> *vc);
 
 @end

@@ -17,6 +17,7 @@
 #import "KYHeaderRefreshMultiViewController.h"
 #import "KYHeaderRefreshVcProtocol.h"
 #import "KYTopRefreshMultiViewController.h"
+#import "KYTopRefreshVcProtocol.h"
 
 FOUNDATION_EXPORT double KYMultiScrollViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char KYMultiScrollViewVersionString[];

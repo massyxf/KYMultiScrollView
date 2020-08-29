@@ -14,6 +14,7 @@
 @interface KYDemoSubViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,weak)UITableView *tableview;
+@property (nonatomic,assign)NSInteger rowCount;
 
 @end
 
@@ -22,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _rowCount = 10;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds
@@ -29,7 +32,6 @@
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.contentInset = UIEdgeInsetsMake(_top, 0, 0, 0);
     
     if (@available(iOS 11,*)) {
         tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -38,10 +40,10 @@
     }
         
     tableView.mj_header = [NDHeaderRefresh headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];
-    tableView.mj_footer = [NDFooterRefresh footerWithRefreshingTarget:self refreshingAction:@selector(footerRefresh)];
+    tableView.mj_footer = [NDBackFooterRefresh footerWithRefreshingTarget:self refreshingAction:@selector(footerRefresh)];
+    _tableview = tableView;
     
     [self.view addSubview:tableView];
-    _tableview = tableView;
     
     [tableView.mj_header beginRefreshing];
 }
@@ -51,16 +53,23 @@
     return _tableview;
 }
 
+-(void)loadData:(BOOL)isMore{
+    _rowCount = isMore ? (_rowCount + 3) : 0;
+    [_tableview reloadData];
+}
+
 #pragma mark - refresh action
 -(void)headerRefresh{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableview.mj_header endRefreshing];
+//        [self loadData:NO];
     });
 }
 
 -(void)footerRefresh{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.tableview.mj_footer endRefreshingWithNoMoreData];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableview.mj_footer endRefreshing];
+//        [self loadData:YES];
     });
 }
 
