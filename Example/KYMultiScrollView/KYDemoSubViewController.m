@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _rowCount = 0;
+    _rowCount = 20;
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -93,6 +93,10 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%s",__func__);
 }
 
 #pragma mark - scroll

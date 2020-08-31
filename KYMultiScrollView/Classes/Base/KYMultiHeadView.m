@@ -31,6 +31,11 @@
 }
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    CGRect windowRect = [self convertRect:self.bounds toView:[UIApplication sharedApplication].delegate.window];
+    if (CGRectContainsPoint(windowRect, point) == false) {
+        return nil;
+    }
+    
     UIView *view = [super hitTest:point withEvent:event];
     if (!_responseView) {
         return view;
