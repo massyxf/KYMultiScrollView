@@ -53,8 +53,7 @@
             //NSLog(@"%f --- %f",offsetY,subVc.scrollView.contentInset.top);
             CGFloat headShowHeight = [self headHeightWithVc:subVc];
             CGRect frame = weakSelf.headView.frame;
-            frame.origin.y = headShowHeight - frame.size.height + frame.origin.y;
-            //frame.origin.y = headShowHeight - frame.size.height;
+            frame.origin.y = headShowHeight - frame.size.height;
             weakSelf.headView.frame = frame;
             
             //vc
@@ -99,35 +98,37 @@
     NSInteger lastIndex = self.currentIndex;
     if (![super selectVcAtIndex:index]) { return NO; }
     
-    UIViewController<KYHeaderRefreshVcProtocol> *viewcontroller = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[self.currentIndex];
-    BOOL isviewLoad = viewcontroller.isViewLoaded;
+    if (!_headView) { return YES; }
     
-    CGFloat needOffset = 0;
-    //一般的多tableview嵌套 _headView
-    //初次加载 isviewLoad
-    if (!isviewLoad && _headView) {
-        CGFloat head_height = _headView.maxShowHeight;
-        id<KYHeaderRefreshVcProtocol> currentVc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[lastIndex];
-        CGFloat offsetY = currentVc.scrollView.contentOffset.y;
-        CGFloat headShowHeight = [self headHeightWithVc:currentVc];
-        if (headShowHeight != head_height) {
-            offsetY = head_height - currentVc.scrollView.contentInset.top - headShowHeight;
-        }
-        needOffset = offsetY;
-    }
+    UIViewController<KYHeaderRefreshVcProtocol> *vc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[self.currentIndex];
+    BOOL isviewLoad = vc.isViewLoaded;
     
-    _headView.responseView = viewcontroller.scrollView;
-    
-    //一般的多tableview嵌套
-    if (!isviewLoad && _headView) {
-        viewcontroller.scrollView.contentOffset = CGPointMake(0, needOffset);
-    }
+    _headView.responseView = vc.scrollView;
     
     //fix bug:初次加载vc时，contentInset会有意料之外的值
-    UIEdgeInsets insets = viewcontroller.scrollView.contentInset;
-    insets.top = _headView.maxShowHeight + viewcontroller.defaultTop;
-    viewcontroller.scrollView.contentInset = insets;
+    UIEdgeInsets insets = vc.scrollView.contentInset;
+    insets.top = _headView.maxShowHeight + vc.defaultTop;
+    vc.scrollView.contentInset = insets;
+        
+    if (isviewLoad) {
+        CGFloat scrollHeight = vc.scrollView.contentSize.height + insets.top - (_headView.maxShowHeight - _headView.minShowHeight);
+        if (scrollHeight < CGRectGetHeight(vc.scrollView.frame) - insets.top) {
+            [vc.scrollView setContentOffset:CGPointMake(0, -insets.top) animated:YES];
+            !vc.offsetYChanged ? : vc.offsetYChanged(vc);
+            return YES;
+        }
+        CGFloat maxHeight = _headView.maxShowHeight;
+        UIViewController<KYHeaderRefreshVcProtocol> *lastVc = self.subVcs[lastIndex];
+        CGFloat offsetY = lastVc.scrollView.contentOffset.y;
+        CGFloat showHeight = [self headHeightWithVc:lastVc];
+        if (showHeight != maxHeight) {
+            offsetY = maxHeight - lastVc.scrollView.contentInset.top - showHeight;
+        }
+        [vc.scrollView setContentOffset:CGPointMake(0, offsetY) animated:YES];
+        return YES;
+    }
     
+    [vc.scrollView setContentOffset:CGPointMake(0, -insets.top) animated:YES];
     return YES;
 }
 
