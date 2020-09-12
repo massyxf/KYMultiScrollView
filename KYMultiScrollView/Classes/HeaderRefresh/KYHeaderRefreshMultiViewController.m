@@ -53,6 +53,7 @@
             //NSLog(@"%f --- %f",offsetY,subVc.scrollView.contentInset.top);
             CGFloat headShowHeight = [self headHeightWithVc:subVc offset:offsetY];
             CGRect frame = weakSelf.headView.frame;
+            //frame.origin.y = headShowHeight - frame.size.height + headviewOriginY;
             frame.origin.y = headShowHeight - frame.size.height;
             weakSelf.headView.frame = frame;
             
@@ -124,7 +125,7 @@
     
     //fix bug:初次加载vc时，contentInset会有意料之外的值
     UIEdgeInsets insets = viewcontroller.scrollView.contentInset;
-    insets.top = _headView.maxShowHeight;
+    insets.top = _headView.maxShowHeight + viewcontroller.defaultTop;
     viewcontroller.scrollView.contentInset = insets;
     
     return YES;

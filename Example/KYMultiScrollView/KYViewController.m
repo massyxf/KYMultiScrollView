@@ -26,9 +26,21 @@
 {
     [super viewDidLoad];
     
-//    [self headerRefreshDemo];
+//    [self normalContain];
     
-    [self topRefreshDemo];
+    [self headerRefreshDemo];
+    
+//    [self topRefreshDemo];
+}
+
+-(void)normalContain{
+    KYDemoSubViewController *subVc1 = [[KYDemoSubViewController alloc] init];
+    KYDemoSubViewController *subVc2 = [[KYDemoSubViewController alloc] init];
+    KYDemoSubViewController *subVc3 = [[KYDemoSubViewController alloc] init];
+    KYMultiViewController *multiVc = [[KYMultiViewController alloc] initWithSubVcs:@[subVc1,subVc2,subVc3]
+                                                                      defaultIndex:2];
+    [self addChildViewController:multiVc];
+    [self.view addSubview:multiVc.view];
 }
 
 -(void)headerRefreshDemo{

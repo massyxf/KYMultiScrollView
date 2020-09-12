@@ -60,6 +60,11 @@
     return _tableview;
 }
 
+-(CGFloat)defaultTop{
+    return 0;
+}
+
+
 -(void)loadData:(BOOL)isMore{
     _rowCount = isMore ? (_rowCount + 3) : 0;
     [_tableview reloadData];
@@ -67,14 +72,14 @@
 
 #pragma mark - refresh action
 -(void)headerRefresh{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableview.mj_header endRefreshing];
         [self loadData:NO];
     });
 }
 
 -(void)footerRefresh{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.tableview.mj_footer endRefreshing];
         [self loadData:YES];
     });
