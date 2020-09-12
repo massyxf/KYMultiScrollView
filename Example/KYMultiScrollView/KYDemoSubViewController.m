@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _rowCount = 20;
+//    _rowCount = 20;
     
     self.view.backgroundColor = [UIColor whiteColor];
     
