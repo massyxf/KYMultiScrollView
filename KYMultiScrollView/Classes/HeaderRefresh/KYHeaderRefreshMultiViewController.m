@@ -118,7 +118,7 @@
             return YES;
         }
         CGFloat maxHeight = _headView.maxShowHeight;
-        UIViewController<KYHeaderRefreshVcProtocol> *lastVc = self.subVcs[lastIndex];
+        UIViewController<KYHeaderRefreshVcProtocol> *lastVc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[lastIndex];
         CGFloat offsetY = lastVc.scrollView.contentOffset.y;
         CGFloat showHeight = [self headHeightWithVc:lastVc];
         if (showHeight != maxHeight) {

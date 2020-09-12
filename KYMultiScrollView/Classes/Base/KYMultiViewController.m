@@ -58,6 +58,19 @@
     }
 }
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    _bgScrollview.frame = self.view.bounds;
+    [_subVcs enumerateObjectsUsingBlock:^(UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.isViewLoaded) {
+            CGRect frame = obj.view.frame;
+            frame.size = self.bgScrollview.frame.size;
+            frame.origin.y = self.bgScrollview.bounds.origin.y;
+            obj.view.frame = frame;
+        }
+    }];
+}
+
 #pragma mark - setter
 -(void)setCurrentIndex:(NSInteger)currentIndex{
     _currentIndex = currentIndex;
@@ -80,9 +93,9 @@
     }
     self.currentIndex = index;
     [_bgScrollview addSubview:viewcontroller.view];
-    CGFloat width = CGRectGetWidth(self.view.bounds);
-    CGFloat height = CGRectGetHeight(self.view.bounds);
-    viewcontroller.view.frame = CGRectMake(index * width, 0, width, height);
+    CGRect frame = _bgScrollview.bounds;
+    frame.origin.x = index * CGRectGetWidth(frame);
+    viewcontroller.view.frame = frame;
     return YES;
 }
 

@@ -56,6 +56,11 @@
 }
 
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    _tableview.frame = self.view.bounds;
+}
+
 -(UIScrollView *)scrollView{
     return _tableview;
 }

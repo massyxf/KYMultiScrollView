@@ -16,7 +16,9 @@
 #import "NDFooterRefresh.h"
 #import "NDBackFooterRefresh.h"
 
-@interface KYViewController ()
+@interface KYViewController (){
+    BOOL _showNavi;
+}
 
 @end
 
@@ -26,11 +28,14 @@
 {
     [super viewDidLoad];
     
+    _showNavi = NO;
+    self.navigationController.navigationBar.hidden = !_showNavi;
+    
 //    [self normalContain];
     
-    [self headerRefreshDemo];
+//    [self headerRefreshDemo];
     
-//    [self topRefreshDemo];
+    [self topRefreshDemo];
 }
 
 -(void)normalContain{
@@ -41,6 +46,7 @@
                                                                       defaultIndex:2];
     [self addChildViewController:multiVc];
     [self.view addSubview:multiVc.view];
+    [self relayoutViewFrameWithVc:multiVc];
 }
 
 -(void)headerRefreshDemo{
@@ -60,6 +66,7 @@
                                                                       defaultIndex:2];
     [self addChildViewController:multiVc];
     [self.view addSubview:multiVc.view];
+    [self relayoutViewFrameWithVc:multiVc];
 }
 
 -(void)topRefreshDemo{
@@ -89,6 +96,18 @@
     }];
     [self addChildViewController:multiVc];
     [self.view addSubview:multiVc.view];
+    [self relayoutViewFrameWithVc:multiVc];
+}
+
+-(void)relayoutViewFrameWithVc:(UIViewController *)vc{
+    CGRect frame = [UIScreen mainScreen].bounds;
+    if (_showNavi) {
+        CGFloat naviHeight = [[UIApplication sharedApplication] statusBarFrame].size.height + 44;
+        vc.view.frame = CGRectMake(0, naviHeight,
+                                   CGRectGetWidth(frame), CGRectGetHeight(frame) - naviHeight);
+        return;
+    }
+    vc.view.frame = frame;
 }
 
 @end
