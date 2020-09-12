@@ -106,8 +106,7 @@
 
 #pragma mark - scroll
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    CGFloat y = scrollView.contentOffset.y;
-    !_offsetYChanged ? : _offsetYChanged(y,self);
+    !_offsetYChanged ? : _offsetYChanged(self);
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{

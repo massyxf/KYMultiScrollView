@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak,readonly)UIScrollView *scrollView;
 @property (nonatomic,assign,readonly)CGFloat defaultTop;
 
-@property (nonatomic,copy)void (^offsetYChanged)(CGFloat y,id<KYHeaderRefreshVcProtocol>vc);
+@property (nonatomic,copy)void (^offsetYChanged)(id<KYHeaderRefreshVcProtocol>vc);
 
 @end
 

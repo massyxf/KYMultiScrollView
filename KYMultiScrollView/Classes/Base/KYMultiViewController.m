@@ -12,7 +12,6 @@
 
 @property (nonatomic,copy)NSArray<UIViewController *> *subVcs;
 @property (nonatomic,assign)NSInteger currentIndex;
-@property (nonatomic,weak)UIViewController *currentVc;
 
 @property (nonatomic,weak)UIScrollView *bgScrollview;
 
@@ -61,16 +60,16 @@
 
 #pragma mark - setter
 -(void)setCurrentIndex:(NSInteger)currentIndex{
-    if (_currentIndex == currentIndex && _currentVc == _subVcs[currentIndex]) {
-        return;
-    }
     _currentIndex = currentIndex;
-    _currentVc = _subVcs[currentIndex];
     if ([_delegate respondsToSelector:@selector(multiViewController:currentVcChanged:index:)]) {
-        [_delegate multiViewController:self currentVcChanged:_currentVc index:_currentIndex];
+        [_delegate multiViewController:self currentVcChanged:self.currentVc index:_currentIndex];
     }
 }
 
+#pragma mark - getter
+-(UIViewController *)currentVc{
+    return _subVcs[_currentIndex];
+}
 
 #pragma mark - public func
 -(BOOL)selectVcAtIndex:(NSInteger)index{
@@ -94,7 +93,6 @@
         CGFloat width = CGRectGetWidth(self.view.bounds);
         NSInteger index = (scrollView.contentOffset.x + 10) / width;
         [self selectVcAtIndex:index];
-        self.currentVc = _subVcs[index];
     }
 }
 

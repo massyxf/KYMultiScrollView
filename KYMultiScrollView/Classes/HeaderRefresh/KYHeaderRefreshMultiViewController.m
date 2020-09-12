@@ -40,7 +40,7 @@
 -(void)configSubVcs{
     KYWeakSelf
     [self.subVcs enumerateObjectsUsingBlock:^(UIViewController<KYHeaderRefreshVcProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.offsetYChanged = ^(CGFloat offsetY,id<KYHeaderRefreshVcProtocol> subVc) {
+        obj.offsetYChanged = ^(id<KYHeaderRefreshVcProtocol> subVc) {
             //一般的多tableview嵌套
             if (!weakSelf.headView) { return; }
             
@@ -51,10 +51,10 @@
             
             //head
             //NSLog(@"%f --- %f",offsetY,subVc.scrollView.contentInset.top);
-            CGFloat headShowHeight = [self headHeightWithVc:subVc offset:offsetY];
+            CGFloat headShowHeight = [self headHeightWithVc:subVc];
             CGRect frame = weakSelf.headView.frame;
-            //frame.origin.y = headShowHeight - frame.size.height + headviewOriginY;
-            frame.origin.y = headShowHeight - frame.size.height;
+            frame.origin.y = headShowHeight - frame.size.height + frame.origin.y;
+            //frame.origin.y = headShowHeight - frame.size.height;
             weakSelf.headView.frame = frame;
             
             //vc
@@ -74,7 +74,7 @@
         
         //根据当前offset算出此时head的高度
         CGFloat offsetY = vc.scrollView.contentOffset.y;
-        CGFloat headShowHeight = [self headHeightWithVc:vc offset:offsetY];
+        CGFloat headShowHeight = [self headHeightWithVc:vc];
         if (headShowHeight == height) { continue; }
         offsetY = head_height - vc.scrollView.contentInset.top - height;
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -83,10 +83,10 @@
     }
 }
 
--(CGFloat)headHeightWithVc:(id<KYHeaderRefreshVcProtocol>)vc offset:(CGFloat)offsetY{
+-(CGFloat)headHeightWithVc:(id<KYHeaderRefreshVcProtocol>)vc{
     CGFloat head_height = _headView.maxShowHeight;
     CGFloat head_minHeight = _headView.minShowHeight;
-    CGFloat headShowHeight = head_height - (offsetY + vc.scrollView.contentInset.top);
+    CGFloat headShowHeight = head_height - (vc.scrollView.contentOffset.y + vc.scrollView.contentInset.top);
     if (headShowHeight <= head_minHeight) {
         headShowHeight = head_minHeight;
     }else if(headShowHeight >= head_height){
@@ -109,7 +109,7 @@
         CGFloat head_height = _headView.maxShowHeight;
         id<KYHeaderRefreshVcProtocol> currentVc = (UIViewController<KYHeaderRefreshVcProtocol> *)self.subVcs[lastIndex];
         CGFloat offsetY = currentVc.scrollView.contentOffset.y;
-        CGFloat headShowHeight = [self headHeightWithVc:currentVc offset:offsetY];
+        CGFloat headShowHeight = [self headHeightWithVc:currentVc];
         if (headShowHeight != head_height) {
             offsetY = head_height - currentVc.scrollView.contentInset.top - headShowHeight;
         }
